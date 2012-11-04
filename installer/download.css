@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana, Tahoma, Arial, Helvetica, "Sans Serif", Univers;
+    font-size: 11pt;
+}
+
+h1 {
+    font-size: 16pt;
+}
+
+.mainpage {
+    width: 1024px;
+    margin-left: 20px;
+}
+
+
+.update {
+    font-size: 9pt;
+    font-style: italic;
+    text-align: right;
+}
+
+.sectionhead {
+    font-size: 13pt;
+    background-color: #3080c0;
+    color: #ffffff;
+    padding: 2px;
+    margin: 25px 0px 0px 0px;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+
+<installation version="1.0">
+    <info>
+        <appname>Calgary Fringe Box Office</appname>
+        <appversion>0.7.37</appversion>
+        <appsubpath>CalgaryFringe</appsubpath>
+        <javaversion>1.6</javaversion>
+        <authors>
+            <author name="Sean Nichols" email="seanni@trichotomy.ca"/>
+        </authors>
+        <url>http://boxoffice.calgaryfringe.ca/download</url>
+    </info>
+
+    <variables>
+        <variable name="docsdir" value="/" condition="!izpack.windowsinstall"/>
+        <variable name="docsdir" value="\My Documents\" condition="izpack.windowsinstall"/>
+        <variable name="docsdir" value="\Documents\" condition="izpack.windowsinstall.7"/>
+    </variables>
+
+    <guiprefs width="640" height="480" resizable="yes"/>
+
+    <locale>
+        <langpack iso3="eng"/>
+    </locale>
+
+    <resources>
+        <res id="TargetPanel.dir" src="TargetDir.dat"/>
+        <res id="shortcutSpec.xml" src="windows_shortcut_spec.xml"/>
+    </resources>
+
+    <native type="izpack" name="ShellLink.dll">
+        <os family="windows"/>
+    </native>
+
+    <panels>
+        <panel classname="HelloPanel"/>
+        <panel classname="TargetPanel"/>
+        <panel classname="PacksPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="ShortcutPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+
+    <packs>
+        <pack name="BoxOffice" required="yes">
+            <description>Box Office Application</description>
+            <file src="../BoxOffice.jar" targetdir="$INSTALL_PATH"/>
+            <file src="../BoxOffice.exe" targetdir="$INSTALL_PATH"/>
+            <file src="../calgaryfringe.ico" targetdir="$INSTALL_PATH"/>
+            <file src="../images" targetdir="$INSTALL_PATH"/>
+            <file src="txns_all.dat" targetdir="$INSTALL_PATH" override="false"/>
+            <file src="txns_done.dat" targetdir="$INSTALL_PATH" override="false"/>
+        </pack>
+    </packs>
+</installation>

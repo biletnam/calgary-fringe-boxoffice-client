@@ -1,0 +1,9 @@
+# Ignore the following files when committing to Git
+
+*.class
+*.exe
+
+*.jar
+*.zip
+
+Thumbs.db

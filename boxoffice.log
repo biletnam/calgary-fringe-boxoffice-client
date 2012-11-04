@@ -1,0 +1,27 @@
+Box Office app version: 0.7.40
+{sessionid=null&username=null&action=checkversion&txnid=1352058543202.0}
+success
+0.7.37
+
+Requested Version: 0.7.37
+{sessionid=null&username=null&action=login&password=naki5ka&username=boxoffice&txnid=1352058549490.0}
+success
+04c208cb514216ae1f2224547ae4a2e6
+
+{sessionid=04c208cb514216ae1f2224547ae4a2e6&username=boxoffice&action=venuelist&txnid=1352058549835.0}
+success
+4|3|Alexandra Centre Society
+3|0|ArtPoint Gallery
+10|0|DaDe Art & Design Lab
+13|3|Festival Hall
+1|10|Information Tent
+8|0|Jacqueline Suzanne's Bistro
+12|0|Lantern Church - Basement
+2|3|Lantern Church - Gym
+7|0|Lantern Church - Sanctuary
+5|1|Lolita's Lounge
+9|0|Loose Moose Theatre
+11|0|NINE Cafe
+14|0|Stash Needle Art Lounge
+6|0|Venu 1008
+

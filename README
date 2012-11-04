@@ -1,0 +1,44 @@
+README for Calgary Fringe Festival Box Office Client Program
+
+
+Some documentation needs to go here :-)
+
+This README is accurate (but not necessarily complete!) as of Nov. 04, 2012 and client v.0.7.40
+
+----------------------------------------------------------------------------------------------------
+
+
+To compile the program:
+    * in Unix, use GNU make (or equivalent) - see Makefile
+    * in Windows, use make.bat
+   
+To run the program:
+    * java -jar BoxOffice.jar
+    * I also use Launch4Java (see http://launch4j.sourceforge.net/) to make .exe files for Windows.
+       There are appropriate config files for L4J in the installer/ directory.
+
+To deploy the program:
+    * I use izpack (see http://izpack.org/) to make deployment packages. Again, there are
+       appropriate config files for izpack in the installer/ directory. I also then use L4J to wrap
+       up the installer in a .exe for windows.
+    * See also the public download page at http://boxoffice.calgaryfringe.ca/download/
+    * if you prefer a DIY approach, you will basically need to run it from a directory containing:
+        - BoxOffice.jar
+        - calgaryfringe.ico
+        - txns_all.dat     # this will be recreated, but best to have a 0-length dummy file
+        - txns_done.dat    # this will be recreated, but best to have a 0-length dummy file
+        - images/boxofficeform.png
+        - images/fringe_logo_64x64.png
+        - images/offline_icon.png
+        - images/online_icon.png
+
+To hack around in the program:
+   * You're on your own for now!
+   * BoxOfficeApp.java is the starting point (as per BoxOffice.manifest). From there, you'll be
+      mostly interested in BoxOffice.java, and then on to Performance.java and WindowData.java...
+
+To get help:
+   * email me :-)
+
+Sean Nichols
+seanni (AT) trichotomy (DOT) ca

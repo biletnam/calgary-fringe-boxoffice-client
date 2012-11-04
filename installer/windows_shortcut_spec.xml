@@ -1,0 +1,18 @@
+<shortcuts>
+    <skipIfNotSupported/>
+
+    <shortcut name="Calgary Fringe Box Office"
+              target="$INSTALL_PATH\BoxOffice.exe"
+              commandLine=""
+              workingDirectory="$INSTALL_PATH"
+              description="Calgary Fringe Box Office"
+              iconFile="$INSTALL_PATH\calgaryfringe.ico"
+              iconIndex="0"
+              initialState="normal"
+              programGroup="no"
+              desktop="yes"
+              applications="no"
+              startMenu="yes"
+              startup="no">
+    </shortcut>
+</shortcuts>
